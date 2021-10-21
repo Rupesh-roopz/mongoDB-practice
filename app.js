@@ -1,5 +1,4 @@
 const db = require('mongodb').MongoClient;
-
 // Connecting to database
 async function connection(){ 
     const uri = 'mongodb://localhost:27017';

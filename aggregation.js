@@ -32,8 +32,7 @@ async function sampleAggregate(client) {
         { $limit : 10},
         { $sort : {"pop" : -1}},
         { $skip : 5}
-        
-        
+    
     ]
      const result = client.db('aggregate').collection('sample_collection')
     .aggregate(pipeLine);
